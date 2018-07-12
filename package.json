@@ -2,7 +2,7 @@
   "name": "first-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://davidmontoyalondono.github.io/first-react-app",
+  "homepage": "http://davidmontoyalondono.github.io/first-react-application",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
