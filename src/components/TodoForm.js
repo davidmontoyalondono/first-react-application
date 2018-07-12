@@ -24,6 +24,36 @@ class TodoForm extends Component{
                       placeholder="Title"
                      />
                   </div>
+                  <div className="form-group">
+                     <input
+                      type="text"
+                      name="responsible"
+                      className="form-control"
+                      placeholder="Responsible"
+                     />
+                  </div>
+                  <div className="form-group">
+                     <input
+                      type="text"
+                      name="description"
+                      className="form-control"
+                      placeholder="Description"
+                     />
+                  </div>
+                  <div className="form-group">
+            <select
+                name="priority"
+                className="form-control"
+                value={this.state.priority}
+              >
+              <option>low</option>
+              <option>medium</option>
+              <option>high</option>
+            </select>
+          </div>
+          <button type="submit" className="btn btn-primary">
+            Save
+          </button>
                </form>
             </div>
         );
@@ -31,3 +61,4 @@ class TodoForm extends Component{
 
 }
 
+export default TodoForm;

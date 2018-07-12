@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/Navigation';
 import { todos } from './todos.json';
+import TodoForm from './components/TodoForm';
 
 class App extends Component {
   
@@ -40,12 +41,21 @@ class App extends Component {
 
           <div className="container">
              <div className="row mt-4">
-            {todos}
+
+             <div className="col-md-4 text-center">
+                <img src={logo} className="App-logo" alt="logo" />
+                <TodoForm />
+             </div>
+
+                  <div className="col-md-8">
+                  <div className="row">
+                   {todos}
+                 </div>
+                 </div>
+                 
              </div>
           </div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="App-intro">
-        </p>
+       
       </div>
     );
   }
