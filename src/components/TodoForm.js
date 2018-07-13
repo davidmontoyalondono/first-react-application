@@ -27,6 +27,7 @@ class TodoForm extends Component{
        console.log(this.state);
        this.props.onAddTodo(this.state);
        console.log('Enviando los datos...');
+       console.log('modificación');
     }
 
     render(){
